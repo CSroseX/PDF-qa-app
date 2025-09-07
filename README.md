@@ -1,4 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Force Equals Assignment
+
+This project is a Next.js application that provides a PDF-based Q&A interface. Follow the instructions below to download and run the project.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- npm (comes with Node.js) or yarn
+
+## Download
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/CSroseX/force-equals-assignment.git
+```
+
+Then navigate to the project directory:
+
+```bash
+cd pdf-qa-app
+```
+
+## Installation
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+## Running the Project
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+### Production
+
+Build the project for production:
+
+```bash
+npm run build
+```
+
+Then start the production server:
+
+```bash
+npm start
+```
+
+## Environment Variables
+
+Create a `.env` file in the project root with the following variables (replace the keys with your own):
+
+```properties
+OPENAI_API_KEY=your_openai_api_key
+API_SECRET_KEY=your_api_secret_key
+NEXT_PUBLIC_API_SECRET_KEY=your_public_api_secret_key
+```
+
+## Additional Information
+
+- The project uses [Next.js](https://nextjs.org/).
+- PDF parsing is done using the `pdf-parse` library.
+
+Feel free to open an issue in the repository for any questions or problems.
 
 ## Getting Started
 
