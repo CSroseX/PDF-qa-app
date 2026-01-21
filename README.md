@@ -1,6 +1,10 @@
-# Force Equals Assignment
+# PDF Q&A Platform
 
-This project is a Next.js application that provides a PDF-based Q&A interface. Follow the instructions below to download and run the project.
+Production-ready PDF ingestion and retrieval-augmented generation (RAG) web application that indexes documents into vector embeddings and serves low-latency, context-aware question answering through a Next.js App Router frontend orchestrating OpenAI models.
+
+<img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge"/> <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge"/> <img src="https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white&style=for-the-badge"/> <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=for-the-badge"/> <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge"/>
+
+Follow the instructions below to provision dependencies, bootstrap the environment, and run the service locally.
 
 ## Prerequisites
 
@@ -12,7 +16,7 @@ This project is a Next.js application that provides a PDF-based Q&A interface. F
 Clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/CSroseX/force-equals-assignment.git
+git clone https://github.com/CSroseX/pdf-qa-app.git
 ```
 
 Then navigate to the project directory:
@@ -23,7 +27,7 @@ cd pdf-qa-app
 
 ## Installation
 
-Install the project dependencies:
+Install runtime and build-time dependencies:
 
 ```bash
 npm install
@@ -33,7 +37,7 @@ npm install
 
 ### Development
 
-Start the development server:
+Launch the hot-reload development server:
 
 ```bash
 npm run dev
@@ -43,7 +47,7 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ### Production
 
-Build the project for production:
+Build the project for production with optimized static assets and server bundles:
 
 ```bash
 npm run build
@@ -67,8 +71,9 @@ NEXT_PUBLIC_API_SECRET_KEY=your_public_api_secret_key
 
 ## Additional Information
 
-- The project uses [Next.js](https://nextjs.org/).
-- PDF parsing is done using the `pdf-parse` library.
+- Built with [Next.js](https://nextjs.org/) App Router to leverage server components and edge-ready deployments.
+- PDF ingestion leverages `pdf-parse` to extract text for downstream embedding.
+- Retrieval latency is minimized via precomputed embeddings and streamlined OpenAI completion calls.
 
 Feel free to open an issue in the repository for any questions or problems.
 
